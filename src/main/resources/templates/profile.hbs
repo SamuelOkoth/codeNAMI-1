@@ -10,29 +10,50 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Profile <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/profile">Profile <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">View Challenges <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/challenges">View Challenges <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Post Challenges <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/challenge">Post Challenges <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" id="profile1">
             <div class="card mb-3">
                 <img src="https://images.pexels.com/photos/2741572/pexels-photo-2741572.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Jane Doe</h5>
                     <p class="card-text"><small class="text-muted">I'm Awesome</small></p>
                 </div>
-                <a href="#"><button class="btn btn-dark">Edit Profile</button></a>
+                <a href="#"><button class="btn btn-dark" id="profile">Edit Profile</button></a>
+            </div>
+        </div>
+        <div class="col-md-4 edit" id="edit1">
+            <div class="card w-75">
+                <img src="https://images.pexels.com/photos/2741572/pexels-photo-2741572.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <form>
+                        <button class="btn btn-dark">Change Image</button>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username">
+                            <small class="form-text text-muted"><strong>Input your username</strong></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="Bio">Bio</label>
+                            <input type="text" class="form-control" id="bio" placeholder="Enter Bio">
+                            <small class="form-text text-muted"><strong>Write something about yourself</strong></small>
+                        </div>
+                        <button type="submit" class="btn btn-dark" id="edit">Edit</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="col-md-8">
@@ -69,6 +90,7 @@
                         </div>
                     </div>
                 </div>
+                <a href="/view"><button class="btn btn-dark btn-block">View</button></a>
             </div>
             <br>
             <div class="card border-dark mb-3">
@@ -104,6 +126,7 @@
                         </div>
                     </div>
                 </div>
+                <a href="/view"><button class="btn btn-dark btn-block">View</button></a>
             </div>
         </div>
     </div>
