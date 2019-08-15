@@ -10,7 +10,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -20,7 +20,7 @@
                                 <a class="dropdown-item" id="signIn" href="#">SignIn</a>
                                 <a class="dropdown-item" id="signUp" href="#">SignUp</a>
                                 <div class="dropdown-divider"></div>
-                                <p class="dropdown-item" href="#">Welcome to codeNAMI</p>
+                                <p class="dropdown-item">Welcome to codeNAMI</p>
                             </div>
                         </li>
                     </ul>
@@ -37,7 +37,7 @@
         <div class="col-md-6 padding-card" id="signUp1">
             <div class="card w-75">
                 <div class="card-body">
-                    <form>
+                    <form method="post" action="/profile/new">
                         <div class="form-group">
                             <label for="username">Username</label>
                             <input type="text" class="form-control" id="username" placeholder="Enter username">
@@ -57,7 +57,7 @@
                             <label for="exampleInputPassword1">Enter Password Again</label>
                             <input type="password" class="form-control" id="inputPassword2" placeholder="Re-enter password">
                         </div>
-                        <button type="submit" class="btn btn-primary">SignUp For codeNAMI</button>
+                        <button type="submit" class="btn btn-dark" id="signInAgain"><p class="white text">SignUp For codeNAMI</p></button>
                     </form>
                 </div>
             </div>
@@ -65,7 +65,7 @@
         <div class="col-md-6 padding-card signIn1" id="signIn1">
             <div class="card w-75">
                 <div class="card-body">
-                    <form>
+                    <form method="post" action="/challenges">
                         <div class="form-group">
                             <label for="username">Username</label>
                             <input type="text" class="form-control" id="username" placeholder="Enter username">
@@ -76,7 +76,7 @@
                             <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
                             <small class="form-text text-muted"><strong>Input your password</strong></small>
                         </div>
-                        <button type="submit" class="btn btn-primary">SignIn For codeNAMI</button>
+                        <a href="/challenges"><button type="submit" class="btn btn-dark"><p class="white text">SignIn For codeNAMI</p></button></a>
                     </form>
                 </div>
             </div>
