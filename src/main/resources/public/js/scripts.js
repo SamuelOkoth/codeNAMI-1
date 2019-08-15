@@ -5,7 +5,17 @@ $(document).ready(function(){
   });
 
    $("#signUp").click(function(){
-    $("#signUp1").show(1000);
-    $("#signIn1").hide(1000);
+    $("#signUp1").show();
+    $("#signIn1").hide();
    });
+
+    $("#edit").click(function(){
+      $("#profile1").show();
+      $("#edit1").hide();
+     });
+
+    $("#profile").click(function(){
+           $("#profile1").hide();
+           $("#edit1").show();
+    });
 });
