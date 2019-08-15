@@ -1,0 +1,135 @@
+{{#partial "content"}}
+    <div class="row">
+        <div class="col-md-12 profile-card">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand text" href="#">codeNAMI</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/profile">Profile <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/challenges">View Challenges <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/challenge">Post Challenges <span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="col-md-8">
+            <div class="card border-dark mb-3">
+                <div class="card-header">FAILURE: Build failed with an exception.</div>
+                <div class="card-body text-dark">
+                    <p class="card-text">Execution failed for task ':run'.
+                        > Process 'command '/usr/lib/jvm/java-11-openjdk-amd64/bin/java'' finished with non-zero exit value 100
+                    </p>
+                    <div class="card-footer">
+                        <p>It does not work!</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-9">
+                            <a href="#"><i class="fas fa-chevron-up"></i></a>
+                            <p>12</p>
+                            <a href="#"><i class="fas fa-chevron-down"></i></a>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-3" style="max-width: 180px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="https://images.pexels.com/photos/2741572/pexels-photo-2741572.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <p class="card-text"><small class="text-muted">Jane Doe</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-dark mb-3">
+                <div class="card-body text-dark">
+                    <p class="card-text">The solution is this
+                    </p>
+                    <div class="card-footer">
+                        <p>It now works</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-9">
+                            <a href="#"><i class="fas fa-chevron-up"></i></a>
+                            <p>12</p>
+                            <a href="#"><i class="fas fa-chevron-down"></i></a>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-3" style="max-width: 180px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="https://images.pexels.com/photos/2741572/pexels-photo-2741572.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <p class="card-text"><small class="text-muted">Jane Doe</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card border-dark mb-3">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="contribution">Code</label>
+                                <textarea type="text" class="form-control" id="contribution" placeholder="Enter your code"></textarea>
+                                <small id="emailHelp" class="form-text text-muted"><strong>Share a contribution</strong></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="errorDescription">Description of Contribution</label>
+                                <textarea type="text" class="form-control" id="errorDescription" placeholder="Description of Contribution"></textarea>
+                                <small class="form-text text-muted"><strong>Description of Contribution</strong></small>
+                            </div>
+                            <button type="submit" class="btn btn-dark">Add Contribution</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3" style="max-width: 100%;">
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted">Contributors</small></p>
+                        </div>
+            </div>
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://images.pexels.com/photos/2741572/pexels-photo-2741572.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted">Jane Doe</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}
