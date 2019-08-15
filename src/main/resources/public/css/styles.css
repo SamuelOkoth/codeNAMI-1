@@ -46,6 +46,11 @@ small strong{
     text-align: center;
 }
 
+.middle{
+    margin-left:auto;
+    margin-right:auto;
+}
+
 .card{
     margin-top: 10px;
 }
@@ -54,6 +59,10 @@ small strong{
     color:#2b3137;
 }
 
-.signIn1{
+.signIn1, .edit{
     display: none;
+}
+
+.justifyCenter{
+    justify-align:center;
 }
