@@ -1,0 +1,59 @@
+body{
+    background-color: #3AAFA9;
+}
+
+.text{
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.bottom{
+    color: #2b3137;
+}
+
+.padding-text{
+    padding-top:70px;
+}
+
+.padding-card{
+    margin-top:20px;
+}
+
+.white{
+    color: white;
+}
+
+p{
+    color: #2b3137;
+}
+
+p .white{
+    color: white;
+}
+
+small{
+    color: #2b3137;
+}
+
+small strong{
+    color: #2b3137;
+}
+
+.form-group{
+    margin:0;
+}
+
+.center{
+    text-align: center;
+}
+
+.card{
+    margin-top: 10px;
+}
+
+.card-header{
+    color:#2b3137;
+}
+
+.signIn1{
+    display: none;
+}
