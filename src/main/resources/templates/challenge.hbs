@@ -1,0 +1,124 @@
+{{#partial "content"}}
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand text" href="#">codeNAMI</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Join Us
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" id="signIn2" href="#">SignIn</a>
+                                <a class="dropdown-item" id="signUp2" href="#">SignUp</a>
+                                <div class="dropdown-divider"></div>
+                                <p class="dropdown-item" href="#">Welcome to codeNAMI</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="col-md-2">
+            <nav class="nav flex-column">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active" href="#">Profile</a>
+            </nav>
+        </div>
+        <div class="col-md-7">
+            <div class="card border-dark mb-3">
+                <div class="card-header">FAILURE: Build failed with an exception.</div>
+                <div class="card-body text-dark">
+                    <p class="card-text">Execution failed for task ':run'.
+                        > Process 'command '/usr/lib/jvm/java-11-openjdk-amd64/bin/java'' finished with non-zero exit value 100
+                    </p>
+                    <div class="card-footer">
+                        <p>It does not work!</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-9">
+                            <a href="#"><i class="fas fa-chevron-up"></i></a>
+                            <p>12</p>
+                            <a href="#"><i class="fas fa-chevron-down"></i></a>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card mb-3" style="max-width: 180px;">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="https://images.pexels.com/photos/2741572/pexels-photo-2741572.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <p class="card-text"><small class="text-muted">Jane Doe</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+                    <p class="card-text"><small class="text-muted">Quote By Yoh</small></p>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://images.pexels.com/photos/1122868/pexels-photo-1122868.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted">Jane Doe</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://images.pexels.com/photos/2778211/pexels-photo-2778211.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted">John Doe</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="https://images.pexels.com/photos/2741572/pexels-photo-2741572.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <p class="card-text"><small class="text-muted">Jane Doe</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}
