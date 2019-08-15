@@ -1,0 +1,87 @@
+{{#partial "content"}}
+    <div class="row">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand text" href="#">codeNAMI</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Join Us
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" id="signIn" href="#">SignIn</a>
+                                <a class="dropdown-item" id="signUp" href="#">SignUp</a>
+                                <div class="dropdown-divider"></div>
+                                <p class="dropdown-item" href="#">Welcome to codeNAMI</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="col-md-6 padding-text">
+            <h1 class="text align-center">Welcome</h1>
+            <h1 class="text align-center"> To</h1>
+            <h1 class="text white align-center">codeNAMI</h1>
+            <p class="white align-center">codeNAMI is a developer's platform inspired by the way you work. From open source to business, you can post your errors from your code, debug code, and get your work debugged. </p>
+            <p></p>
+        </div>
+        <div class="col-md-6 padding-card" id="signUp1">
+            <div class="card w-75">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username">
+                            <small class="form-text text-muted"><strong>Input your username</strong></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted"><strong>Enter your code here</strong></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                        </div>
+                        <small class="form-text text-muted"><strong>Have a good secure password</strong></small>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Enter Password Again</label>
+                            <input type="password" class="form-control" id="inputPassword2" placeholder="Re-enter password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">SignUp For codeNAMI</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 padding-card signIn1" id="signIn1">
+            <div class="card w-75">
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username">
+                            <small class="form-text text-muted"><strong>Input your username</strong></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                            <small class="form-text text-muted"><strong>Input your password</strong></small>
+                        </div>
+                        <button type="submit" class="btn btn-primary">SignIn For codeNAMI</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}
