@@ -37,26 +37,22 @@
         <div class="col-md-6 padding-card" id="signUp1">
             <div class="card w-75">
                 <div class="card-body">
-                    <form method="post" action="/profile/new">
+                    <form method="post" action="/users/new">
                         <div class="form-group">
                             <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" placeholder="Enter username">
+                            <input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
                             <small class="form-text text-muted"><strong>Input your username</strong></small>
                         </div>
                         <div class="form-group">
                             <label for="inputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
                             <small id="emailHelp" class="form-text text-muted"><strong>Enter your code here</strong></small>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                            <input type="password" class="form-control" id="inputPassword1" placeholder="Password" name="password">
                         </div>
                         <small class="form-text text-muted"><strong>Have a good secure password</strong></small>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Enter Password Again</label>
-                            <input type="password" class="form-control" id="inputPassword2" placeholder="Re-enter password">
-                        </div>
                         <button type="submit" class="btn btn-dark" id="signInAgain"><p class="white text">SignUp For codeNAMI</p></button>
                     </form>
                 </div>
@@ -65,18 +61,18 @@
         <div class="col-md-6 padding-card signIn1" id="signIn1">
             <div class="card w-75">
                 <div class="card-body">
-                    <form method="post" action="/challenges">
+                    <form method="post" action="/users">
                         <div class="form-group">
                             <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" placeholder="Enter username">
+                            <input type="text" class="form-control" id="usernameId" placeholder="Enter username">
                             <small class="form-text text-muted"><strong>Input your username</strong></small>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                            <input type="password" class="form-control" id="inputPassword1Id" placeholder="Password">
                             <small class="form-text text-muted"><strong>Input your password</strong></small>
                         </div>
-                        <a href="/challenges"><button type="submit" class="btn btn-dark"><p class="white text">SignIn For codeNAMI</p></button></a>
+                        <button type="submit" class="btn btn-dark"><p class="white text">SignIn For codeNAMI</p></button>
                     </form>
                 </div>
             </div>

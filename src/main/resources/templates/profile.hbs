@@ -13,13 +13,13 @@
                             <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="/profile">Profile <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/users/{{id}}">Profile <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="/challenges">View Challenges <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/users/{{userId}}/challenges">View Challenges <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="/challenge">Post Challenges <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/users/{{userId}}/challenge">Post Challenges <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
                 </div>
@@ -90,43 +90,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="/view"><button class="btn btn-dark btn-block">View</button></a>
-            </div>
-            <br>
-            <div class="card border-dark mb-3">
-                <div class="card-header">FAILURE: Build failed with an exception.</div>
-                <div class="card-body text-dark">
-                    <p class="card-text">Execution failed for task ':run'.
-                        > Process 'command '/usr/lib/jvm/java-11-openjdk-amd64/bin/java'' finished with non-zero exit value 100
-                    </p>
-                    <div class="card-footer">
-                        <p>It does not work!</p>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="row no-gutters">
-                        <div class="col-md-9">
-                            <a href="#"><i class="fas fa-chevron-up"></i></a>
-                            <p>12</p>
-                            <a href="#"><i class="fas fa-chevron-down"></i></a>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card mb-3" style="max-width: 180px;">
-                                <div class="row no-gutters">
-                                    <div class="col-md-4">
-                                        <img src="https://images.pexels.com/photos/2741572/pexels-photo-2741572.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <p class="card-text"><small class="text-muted">Jane Doe</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="/view"><button class="btn btn-dark btn-block">View</button></a>
+                <a href="/users/:userId/challenges/:challengeId"><button class="btn btn-dark btn-block">View</button></a>
             </div>
         </div>
     </div>

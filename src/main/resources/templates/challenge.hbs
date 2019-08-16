@@ -13,10 +13,13 @@
                             <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="/challenges">View Challenges <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/users/{{id}}">Profile <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="/challenge">Post Challenges <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/users/{{userId}}/challenges">View Challenges <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/users/{{userId}}/challenge">Post Challenges <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
@@ -29,7 +32,13 @@
         <div class="col-md-2">
             <nav class="nav flex-column">
                 <a class="nav-link active white text" href="/">Home</a>
-                <a class="nav-link active white text" href="/profile">Profile</a>
+                {{#if users}}
+                    {{#each users}}
+                        <a class="nav-link text white" href="/users/{{id}}">Profile <span class="sr-only">(current)</span></a>
+                    {{/each}}
+                    {{else}}
+                        <p class="text white">No users</p>
+                {{/if}}
             </nav>
         </div>
         <div class="col-md-7">
@@ -66,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="/view"><button class="btn btn-dark btn-block">View</button></a>
+                <a href="/users/:userId/challenges/:challengeId"><button class="btn btn-dark btn-block">View</button></a>
             </div>
         </div>
         <div class="col-md-3">

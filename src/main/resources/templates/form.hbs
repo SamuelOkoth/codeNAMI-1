@@ -12,13 +12,13 @@
                             <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="/profile">Profile <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/users/{{id}}">Profile <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="/challenges">View Challenges <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/users/{{userId}}/challenges">View Challenges <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="/challenge">Post Challenges <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/users/{{userId}}/challenge">Post Challenges <span class="sr-only">(current)</span></a>
                         </li>
                     </ul>
                 </div>
@@ -27,20 +27,20 @@
         <div class="col-md-12 padding-card" id=postChallenge>
             <div class="card w-100">
                 <div class="card-body">
-                    <form>
+                    <form method="post" action="users/:userId/challenges/new">
                         <div class="form-group">
                             <label for="errorName">Name of Error</label>
-                            <input type="text" class="form-control" id="errorName" placeholder="Name of Error">
+                            <input type="text" class="form-control" id="errorName" placeholder="Name of Error" name="name">
                             <small class="form-text text-muted"><strong>Input Name of Error</strong></small>
                         </div>
                         <div class="form-group">
                             <label for="inputEmail1">Code</label>
-                            <textarea type="text" class="form-control" id="code" placeholder="Enter your code"></textarea>
+                            <textarea type="text" class="form-control" id="code" placeholder="Enter your code" name="code"></textarea>
                             <small id="emailHelp" class="form-text text-muted"><strong>Share a contributin</strong></small>
                         </div>
                         <div class="form-group">
                         <label for="errorDescription">Description of Error</label>
-                            <textarea type="text" class="form-control" id="errorDescription" placeholder="Description of Error"></textarea>
+                            <textarea type="text" class="form-control" id="errorDescription" placeholder="Description of Error" name="details"></textarea>
                         <small class="form-text text-muted"><strong>Description of Error</strong></small>
                     </div>
                         <button type="submit" class="btn btn-dark">Add Challenge</button>
